@@ -17,7 +17,7 @@ for (i in 1:12) {
 
 ##death rate
 delta<-function(t, d0) {
-  0
+  d0
 }
 
 ## recursion for recruitment function 
@@ -28,7 +28,7 @@ r <- function(i,...) {
 }
 
 ##parms( what else gets included here)
-parms<-c(r_floor=0, r_height=1, r_ctr=0, r_scale=1, size=1, prob =0.5, delta)
+parms<-c(r_floor=0, r_height=1, r_ctr=0, r_scale=1, size=1, prob =0.5, d0=1)
 
 
   
